@@ -1,4 +1,4 @@
-<?
+<?php
 
 include 'config/db.php';
 
@@ -50,7 +50,7 @@ if(!preg_match('/^:/', $hostname_DB)) {
 
 <H1>Database Connection Test</H1>
 
-<? echo "<b><center> Database($database_DB) Output From Host($hostname_DB:$ipaddr_for_hostname)</center></b><br><br>"; ?>
+<?php echo "<b><center> Database($database_DB) Output From Host($hostname_DB:$ipaddr_for_hostname)</center></b><br><br>"; ?>
 
 <form method="POST">
   <fieldset>
@@ -76,7 +76,7 @@ if(!preg_match('/^:/', $hostname_DB)) {
     </tr>
   </thead>
   <tbody>
-<?
+<?php
 
 $i=0;
 while ($i < $num) {
